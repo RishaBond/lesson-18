@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/bubbles-top.png" alt="bubble" class="bubbles-top">
+        <div class="form">
+            <div class="left">
+                <img src="img/register_img.png" alt="paper">
+            </div>
+            <div class="right">
+                <h1>Сохрани свой аккаунт</h1>
+                <p>Получи бесплатно неограниченное количество форм, вопросов и ответов.</p>
+                <form id="form">
+                    <div class="form-item">
+                        <input class="form-control login" id="login" name="login" required placeholder="Имя или никнейм" type="name">
+                    </div>
+                    <div class="form-item">
+                        <input class="form-control email" id="input-email" name="email" required placeholder="Email" type="email">
+                    </div>
+                    <div class="form-item">
+                        <input class="form-control pass" id="input-pass" type="password" name="pass" required placeholder="Пароль">
+                    </div>
+                    <div class="form-item">
+                        <button class="btn" type="submit">Сохранить</button>
+                    </div>
+                </form>
+                <p class="bottom-text">Уже есть аккаунт? <a href="#">Войти</a></p>
+            </div>
+        </div>
+        <img src="img/bubbles-down.png" alt="bubble" class="bubbles-down">
+    </div>
+
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+    <script>
+        $('#form').validate();
+    </script>
+</body>
+</html>
